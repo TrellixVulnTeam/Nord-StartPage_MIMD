@@ -9,7 +9,7 @@ function search(event) {
 }
 
 function getQuote() {
-    fetch('https://api.quotable.io/random')
+    fetch('https://api.quotable.io/random?maxLength=32?tags=famous-quotes')
     .then(response => response.json())
     .then(data => {
         var container = document.getElementById("quote")
